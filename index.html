@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="s.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Cuneiform&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <h1 class="text-title">BAIANINHO GAY??</h1>
+  <img src="Cartoon-red-love-heart-wearing-a-crown-crown-of-love_184126_wh860-removebg-preview.png" class="left-img" width="200px" alt="">
+  <img src="Cartoon-red-love-heart-wearing-a-crown-crown-of-love_184126_wh860-removebg-preview.png" class="right-img" width="200px" alt="">
+    <div class="container">
+      <a href="pag2.html"><button class="button-style-yes">SIM</button></a>
+      <button class="button-style" onmouseover="moveButton(this)">NÃO</button> 
+    </div>
+  <script>
+    function moveButton(button) {
+        const maxX = 1000 - button.offsetWidth;  /* Largura fixa */
+        const maxY = 800 - button.offsetHeight; /* Altura fixa */
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+        button.style.position = 'absolute';
+        button.style.left = randomX + 'px';
+        button.style.top = randomY + 'px';
+    }
+</script>
+</body>
+</html>
